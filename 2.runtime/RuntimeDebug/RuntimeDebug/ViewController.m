@@ -18,10 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    for (int i = 0; i<1000000000000; i++) {
-        CBPerson *person = [[CBPerson alloc]init];
-    }
-    NSLog(@"viewDidLoad");
+    CBPerson *person = [[CBPerson alloc]init];
+    [person eat:@"apple"];
+    [person eat:@"orange"];
+
 }
 
 
