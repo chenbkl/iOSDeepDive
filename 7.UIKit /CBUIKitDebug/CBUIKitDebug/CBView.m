@@ -9,6 +9,18 @@
 
 @implementation CBView
 
+- (void)updateConstraints {
+    
+}
+
+- (void)setNeedsUpdateConstraints {
+    
+}
+
+- (void)updateConstraintsIfNeeded {
+    
+}
+
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 ////    if (!self.userInteractionEnabled || self.hidden || self.alpha <= 0.01) return nil;
 ////    if (![self pointInside:point withEvent:event]) return nil;

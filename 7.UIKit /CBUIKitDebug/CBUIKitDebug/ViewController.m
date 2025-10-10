@@ -17,11 +17,15 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    UIResponder * resp = self.view.nextResponder;
-    while (resp) {
-        NSLog(@"%@",resp);
-        resp = resp.nextResponder;
-    }
+    NSLog(@"%@",self.view.superview);
+    NSLog(@"%@",self.nextResponder);
+    NSLog(@"%@",self.view.superview.nextResponder);
+
+//    UIResponder * resp = self.view.nextResponder;
+//    while (resp) {
+//        NSLog(@"%@",resp);
+//        resp = resp.nextResponder;
+//    }
 }
 
 - (void)viewDidLoad {
